@@ -1,0 +1,88 @@
+
+header{
+    background-color:#EAC926;;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+}
+body{
+    background-color:#ebebeb;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: white;
+}
+h2{
+    font-size: 24px;
+}
+.precios{
+    font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+}
+.descripciones{
+    font-size: 16px;
+}
+
+.centrar {
+    text-align: center;
+}
+.div-footer{
+    opacity: 0.7;
+}
+main section{
+    background-color: white;
+}
+div p{
+    opacity: 10;
+    font-size: 40px;
+}
+.div-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: #1259c3;
+}
+.burger-menu{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    background-color: #293bdb;
+    color: white;
+    font-size: 80px;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.p-header{
+    font-size: 35px;
+    opacity: 0.7;
+}
+.div-contenedor-header{
+    display: inline-block;
+    justify-content: left;
+    align-items: center;
+    font-size: 120px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px 50px 10px 10px;
+    border: 3px solid black;
+
+}
+.div-iconobusqueda{
+    display: inline-block;
+    background-color: white;
+    font-size: 60px;
+    padding: 10px;
+    border: 3px solid black;
+    margin-left: 10px;
+}
+header div p{
+    font-size: 12px;
+}
+.izquierda{
+    left: 10px;
+}
