@@ -1,16 +1,24 @@
 
+*{
+    box-sizing: border-box;
+}
+.contenedor_padre{
+    width: 90%;
+}
 header{
     background-color:#EAC926;;
     font-family: 'Roboto', sans-serif;
     background-size: cover;
 }
 body{
+    width: 100%;
     background-color:#ebebeb;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 footer{
+    width: 100%;
     background-color: white;
 }
 h2{
@@ -28,6 +36,7 @@ h2{
 
 .centrar {
     text-align: center;
+    font-size: 20px;
 }
 .div-footer{
     opacity: 0.7;
@@ -35,15 +44,13 @@ h2{
 main section{
     background-color: white;
 }
-div p{
-    opacity: 10;
-    font-size: 40px;
-}
+
+
 .div-contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 120px;
+    font-size: 50px;
     color: #1259c3;
 }
 .burger-menu{
@@ -52,14 +59,16 @@ div p{
     align-content: center;
     background-color: #293bdb;
     color: white;
-    font-size: 80px;
+    font-size: 25px;
     margin: 5px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
 }
 .p-header{
-    font-size: 35px;
+    font-size: 20px;
     opacity: 0.7;
+    margin:0;
+    padding-left: 2px;
 }
 .div-contenedor-header{
     display: inline-block;
@@ -67,22 +76,28 @@ div p{
     align-items: center;
     font-size: 120px;
     background-color: white;
-    margin: 10px;
-    padding: 10px 50px 10px 10px;
-    border: 3px solid black;
+    margin-left: 10px;
+    padding: 5px 10px 5px 5px;
+    border: 1px solid black;
 
 }
 .div-iconobusqueda{
     display: inline-block;
     background-color: white;
-    font-size: 60px;
-    padding: 10px;
-    border: 3px solid black;
-    margin-left: 10px;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-left:2px;
 }
 header div p{
     font-size: 12px;
 }
 .izquierda{
     left: 10px;
+}
+article img{
+    width: 50%;
+}
+.contenedor-art{
+    width: 80%;
 }
