@@ -18,11 +18,13 @@ body{
     padding: 0;
 }
 footer{
-    width: 100%;
+    width: 95%;
+    margin: auto;
     background-color: white;
 }
-h2{
+body h2{
     font-size: 24px;
+    opacity: 0.7;
 }
 .precios{
     font-size: 18px;
@@ -30,15 +32,11 @@ h2{
 .descuentos{
     font-size: 16px;
 }
-.descripciones{
-    font-size: 16px;
-}
-
 .centrar {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
-.div-footer{
+.opacidad{
     opacity: 0.7;
 }
 main section{
@@ -50,7 +48,7 @@ main section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 30px;
     color: #1259c3;
 }
 .burger-menu{
@@ -59,10 +57,10 @@ main section{
     align-content: center;
     background-color: #293bdb;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 12px;
+    border-radius: 5px;
 }
 .p-header{
     font-size: 20px;
@@ -74,7 +72,6 @@ main section{
     display: inline-block;
     justify-content: left;
     align-items: center;
-    font-size: 120px;
     background-color: white;
     margin-left: 10px;
     padding: 5px 10px 5px 5px;
@@ -96,8 +93,64 @@ header div p{
     left: 10px;
 }
 article img{
-    width: 50%;
+    width: 100%;
 }
-.contenedor-art{
-    width: 80%;
+
+article{
+   margin: auto;
+   margin-bottom: 10px;
+   background-color: white;
+   border-top: 1px solid #ebebeb;
+
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+main section{
+    background-color:#ebebeb ;
+}
+article div i{
+    color: #39b54a;
+}
+.div_contcamion{
+    display: inline-block;
+    border: 1px solid #39b54a;;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left:15px;
+}
+.div_precio{
+    color:#39b54a ;
+}
+.div_padding{
+    padding-left: 15px;
+}
+
+.oculto{
+    display: none;
+}
+body div img{
+    width: 100%;
+}
+.menuhamburguesaoff{
+    display: block;
+}
+div strong{
+    opacity: 0.6;
+}
+@media (min-width: 361px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .oculto{
+        display: block;
+    }
+    .menuhamburguesaoff{
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    
 }
