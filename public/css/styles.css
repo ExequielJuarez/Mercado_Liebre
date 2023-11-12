@@ -1,15 +1,20 @@
-
 *{
     box-sizing: border-box;
 }
-.contenedor_padre{
-    width: 90%;
-}
+/*header*/
+
 header{
     background-color:#EAC926;;
     font-family: 'Roboto', sans-serif;
     background-size: cover;
 }
+
+header div p{
+    font-size: 15px;
+}
+
+/*body*/
+
 body{
     width: 100%;
     background-color:#ebebeb;
@@ -17,51 +22,108 @@ body{
     margin: 0;
     padding: 0;
 }
-footer{
-    width: 95%;
-    margin: auto;
-    background-color: white;
-}
+
 body h2{
     font-size: 24px;
     opacity: 0.7;
+    padding-left: 25px;
+    width: 95vw;
 }
+
 .precios{
     font-size: 18px;
 }
+
 .descuentos{
     font-size: 16px;
 }
-.centrar {
+
+div p {
     text-align: center;
     font-size: 15px;
 }
+
 .opacidad{
     opacity: 0.7;
 }
+
+/*main*/
+main{
+    width: 95%;
+    margin: auto;
+}
 main section{
-    background-color: white;
-}
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .main_nav{
+        display: flex;
+        justify-content: space-between;
+        display: none;
+    }
+    .main_nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .main_nav a{
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 17px;
+    }
+    .main_nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main_nav li{
+        margin: 0 5px;
+    }
+    .rigth_nav{
+        
 
+    }
+    .left_nav{
+        
 
-.div-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: #1259c3;
-}
-.burger-menu{
-    display: inline-block;
-    justify-content: center;
-    align-content: center;
-    background-color: #293bdb;
-    color: white;
-    font-size: 20px;
-    margin: 5px;
-    padding: 12px;
-    border-radius: 5px;
-}
+    }
+    /*footer*/
+    
+    footer{
+        width: 95%;
+        margin: auto;
+        background-color: white;
+        
+    }
+    
+    footer section p{
+        text-align: center;
+    }
+
+    footer section h2{
+        text-align: center;
+    }
+    
+    .div-contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #1259c3;
+    }
+    .burger-menu{
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        background-color: #293bdb;
+        color: white;
+        font-size: 20px;
+        margin: 5px;
+        padding: 12px;
+        border-radius: 5px;
+    }  
 .p-header{
     font-size: 20px;
     opacity: 0.7;
@@ -86,9 +148,6 @@ main section{
     border: 1px solid black;
     margin-left:2px;
 }
-header div p{
-    font-size: 12px;
-}
 .izquierda{
     left: 10px;
 }
@@ -97,15 +156,12 @@ article img{
 }
 
 article{
+   width: 100%;
+   display: inline-block;
    margin: auto;
    margin-bottom: 10px;
    background-color: white;
    border-top: 1px solid #ebebeb;
-
-}
-main{
-    width: 90%;
-    margin: auto;
 }
 main section{
     background-color:#ebebeb ;
@@ -119,6 +175,9 @@ article div i{
     border-radius: 20px;
     padding: 10px;
     margin-left:15px;
+}
+.div_contcamion:hover{
+    transform: rotate(-90deg)
 }
 .div_precio{
     color:#39b54a ;
@@ -139,9 +198,88 @@ body div img{
 div strong{
     opacity: 0.6;
 }
-@media (min-width: 361px){
+section{
+    align-items: center;
+}
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around ;
+}
+.cont_desc{
+    border-top: solid 1px #ebebeb;
+}
+.position{
+    position: relative;
+    left: 83%;
+    bottom: 25px;
+
+}
+.section_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+
+    header section img{
+        width: 50%;
+    }
+    form {
+        width: 50%;
+    }
+
+    input{
+        width: 100%;
+        padding: 10px;
+    }
+    .cont_comprarcuotas{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .p_comprarcuotas{
+        font-size: 15px;
+    }
+      header div p{
+        font-size: 15px;
+        align-self: flex-end;
+    }
+
+    .cont_mismalinea{
+        display: flex;
+    }
+
+    .precio{
+        width: 30%;
+    }
+    .descuento{
+        width: 70%;
+    }
+    .cont_nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .cont_ul{
+        display: flex;
+        width: 50%;
+    }
+    footer h3{
+        text-align: center;
+    }
+
+    /*Medida para tablets*/
+@media (min-width: 769px){
+    main section{
+        flex-direction: row;
+    }
     article{
+        width: 45%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 5px;
     }
     .oculto{
         display: block;
@@ -149,8 +287,46 @@ div strong{
     .menuhamburguesaoff{
         display: none;
     }
+    .position{
+        left:  80%;
+    }
+    .section_header{
+        flex-wrap: nowrap;
+    }
+    .header section img{
+        width: 30%;
+    }
+    form{
+        width: 30%;
+    }
+    .cont_comprarcuotas{
+        width: 30%;
+    }
+    .main_nav{
+        display: flex;
+    }
+    
+}
+.p_comprarcuotas{
+    font-size: 11px;
 }
 
-@media (min-width: 769px){
-    
+
+
+    /*Medida para Desktop*/
+@media (min-width: 1024px)  {
+    main section{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    article{
+        width: 23%;
+        justify-content: space-between;
+    }
+    .position{
+        left: 70%;
+    }
+    .p_comprarcuotas{
+        font-size: 13px;
+    }
 }
