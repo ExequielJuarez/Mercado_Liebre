@@ -111,13 +111,13 @@ main section{
         justify-content: center;
         align-items: center;
         font-size: 30px;
-        color: #1259c3;
+        color: #0044AA;
     }
     .burger-menu{
         display: inline-block;
         justify-content: center;
         align-content: center;
-        background-color: #293bdb;
+        background-color: #0044AA;
         color: white;
         font-size: 20px;
         margin: 5px;
@@ -231,7 +231,7 @@ main section{
         width: 50%;
     }
 
-    input{
+    .input_busqueda{
         width: 100%;
         padding: 10px;
     }
@@ -269,6 +269,56 @@ main section{
     }
     footer h3{
         text-align: center;
+    }
+    /* estilos de registro */
+    .cont_form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .perfil_usuario{
+        display: flex;
+
+    }
+    .input_option{
+        width: 15%;
+    }
+    .form_reg{
+        width: 95%;
+    }
+    .boton_registro{
+        margin-bottom: 5px;
+        background-color: #0044AA;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 5px;
+    
+    }
+    input{
+        width: 100%;
+        padding: 10px;}
+    .boton_registro{
+        width: 100%;
+    }
+    .intereses{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .intereses div{
+        margin-bottom: 10px;
+    }
+    .intereses input{
+        width: 10%;
+    }
+    .intereses label{
+        width: 70%;
+    }
+    .margin{
+        margin: 20px 0;
+        border: none;
+        border-radius: 5px;
     }
 
     /*Medida para tablets*/
