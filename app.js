@@ -2,10 +2,11 @@ const express = require('express')
 const path = require('path')
 const app = express();
 exports.app = app;
+const port = process.env.PORT || 3030;
 
 app.use(express.static('public'));
 
-app.listen(3030,() => console.log('servidor corriendo'));
+app.listen(port,() => console.log('servidor corriendo' + port));
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname,'/views/home.html')));
 
