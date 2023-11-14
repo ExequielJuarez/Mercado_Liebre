@@ -95,6 +95,8 @@ main section{
         width: 95%;
         margin: auto;
         background-color: white;
+        display: flex;
+        flex-wrap: wrap;
         
     }
     
@@ -113,6 +115,12 @@ main section{
         font-size: 30px;
         color: #0044AA;
     }
+    .fcolor{
+        transition: 1s;
+    }
+    .fcolor:hover{
+        color: #39b54a;
+    }
     .burger-menu{
         display: inline-block;
         justify-content: center;
@@ -123,7 +131,17 @@ main section{
         margin: 5px;
         padding: 12px;
         border-radius: 5px;
-    }  
+    } 
+    .cont_footer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        
+
+    }
+    .secfooter{
+        width: 100%;
+    }
 .p-header{
     font-size: 20px;
     opacity: 0.7;
@@ -169,16 +187,26 @@ main section{
 article div i{
     color: #39b54a;
 }
-.div_contcamion{
-    display: inline-block;
-    border: 1px solid #39b54a;;
-    border-radius: 20px;
-    padding: 10px;
-    margin-left:15px;
+main section article .div_contcamion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    transition: all 1s;
 }
-.div_contcamion:hover{
+main section article:hover .div_contcamion{
     transform: rotate(-90deg)
+
 }
+
 .div_precio{
     color:#39b54a ;
 }
@@ -209,11 +237,16 @@ main section{
 }
 .cont_desc{
     border-top: solid 1px #ebebeb;
-}
-.position{
     position: relative;
-    left: 83%;
-    bottom: 25px;
+    padding: 15px 0;
+    
+}
+
+
+.position{
+    position: absolute;
+    right: 20px;
+    top: -15px;
 
 }
 .section_header{
@@ -221,7 +254,6 @@ main section{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 1px solid red;
 }
 
     header section img{
@@ -231,10 +263,7 @@ main section{
         width: 50%;
     }
 
-    .input_busqueda{
-        width: 100%;
-        padding: 10px;
-    }
+    
     .cont_comprarcuotas{
         display: flex;
         width: 100%;
@@ -295,6 +324,12 @@ main section{
         padding: 10px 5px;
     
     }
+    .botomcolor{
+        transition: 1s;
+    }
+    .botomcolor:hover{
+        background-color: #0022AA;
+    }
     input{
         width: 100%;
         padding: 10px;}
@@ -320,6 +355,42 @@ main section{
         border: none;
         border-radius: 5px;
     }
+    .login{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cont_busqueda{
+        width: 50%;
+        display: flex;
+
+    }
+    .boton_busqueda{
+        width: 15%;
+        padding: 10px 5px;
+    }
+    .input_busqueda{
+        width: 80%;
+        padding: 10px;
+    }
+    .busqueda{
+        width: 100%;
+    }
+    main section article:hover .descripcion {
+        display: block;
+        transition: 1s;
+    }
+
+    .descripcion{
+        transition: 1s;
+        display: none;
+    }
+    main section article{
+        transition: all 1s;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 
     /*Medida para tablets*/
 @media (min-width: 769px){
@@ -328,7 +399,6 @@ main section{
     }
     article{
         width: 45%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin: 5px;
     }
     .oculto{
@@ -379,4 +449,13 @@ main section{
     .p_comprarcuotas{
         font-size: 13px;
     }
+    .cont_footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .secfooter{
+        width: 30%;
+        padding-top: 30px;
+    }
+        
 }

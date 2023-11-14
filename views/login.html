@@ -11,64 +11,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-    <body>
 
-        <header>
-            <div class="top-header">
-                <div class="logo"> 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+<header>
+    <section class="section_header">
+        <img src="\images\logo-mercado-liebre.svg" alt="logo">
+        <div class="cont_busqueda">
+        <form action="" class="busqueda">
+            <input type="text" id="mySearch" name="q" placeholder="Buscar" class="input_busqueda" >
+            <button class="boton_busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        </div>
+        <div class="cont_comprarcuotas"><p class="p_comprarcuotas"> <i class="fa-solid fa-hand-holding-dollar izquierda"></i> comprar en cuotas y sin tarjeta de credito</p></div> <br>
+    </section>
+    <br>
+    
+    <nav class="main_nav ">
+        <ul class="rigth_nav">
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Tiendas Oficiales</a></li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Ayuda</a></li>
+        </ul>
+    
+        <ul class="left_nav">
+            <li><a href="/register">crea tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
+            <li><a href="/login">ingresa</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+            <li><a href="">mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
+        </ul>
+    </nav>
+    
+
+    <div class="div-contenedor">
+        <div class="burger-menu menuhamburguesaoff">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div><br>
+    
+</header>
+
+        <main class="cont_form" >
+
+            <form action="/" method="GET" class="login">
+                <div class="cont_login">
+                    <input type="text" name="user" placeholder="Nombre de usuario" class="margin">
+                    <input type="password" name="pass" placeholder="Elegí tu contraseña" class="margin">
+                    <button type="submit" value="Enviar" class="boton_registro margin botomcolor">Enviar</button>
                 </div>
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
-        </header>
-
-        <main class="login">
-
-            <form action="/" method="POST">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <button type="submit" value="Enviar">Enviar</button>
             </form>
 
         </main>
 
         <footer><br>
 
-            <section>
-                <div class="div-contenedor">
-                    <i class="fa-solid fa-credit-card"></i>
-                </div>
-            </section>
+            <div class="cont_footer">
 
-            <section class="opacidad">
-                <h3 >Pagá con tarjeta o en efectivo</h3>
-                <p >Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                    puntos de pago. ¡Y siempre es seguro!</p><br>
+            <div class="secfooter">   
+                <section>
+                    <br>
+                    <div class="div-contenedor">
+                        <i class="fa-solid fa-credit-card fcolor"></i>
+                    </div>
                 </section>
 
+                <section class="opacidad">
+                    <h3 >Pagá con tarjeta o en efectivo</h3>
+                    <p >Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p><br>
+                </section>
+            </div> 
+            
+            <div class="secfooter">
+
                 <section>
+                    <br>
                     <div class="div-contenedor">
-                        <i class="fa-solid fa-gift"></i>
+                        <i class="fa-solid fa-gift fcolor"></i>
                     </div> 
                 </section>
 
@@ -77,23 +94,30 @@
                 <p >Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p><br>
                 </section>
+            </div>
+            
+            <div class="secfooter">
 
-            <section>
-                <div class="div-contenedor">
-                    <i class="fa-solid fa-user-shield"></i>
-                </div>
-            </section>
+                <section>
+                    <br>
+                    <div class="div-contenedor">
+                        <i class="fa-solid fa-user-shield fcolor"></i>
+                    </div>
+                </section>
 
-            <section class="opacidad">
-                    <h3 >Seguridad, de principio a fin</h3>
-                    <p >¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.</p><br>
-            </section>
+                <section class="opacidad">
+                        <h3 >Seguridad, de principio a fin</h3>
+                        <p >¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p><br>
+                </section>
+
+            </div>
+
+            </div>
 
             <section>
                 <p >Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
             </section>
         </footer>
-
     </body>
 </html>
